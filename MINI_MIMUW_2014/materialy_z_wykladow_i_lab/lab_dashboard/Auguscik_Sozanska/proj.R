@@ -1,4 +1,4 @@
-library(dplyr)   # obróbka danych
+library(dplyr)   # obr?bka danych
 library(ggplot2)
 library(reshape)
 library(RColorBrewer)
@@ -11,7 +11,7 @@ miejsce  <- c(22, 6, 9, 45 ,114)
 
 dane <- data.frame(kraje, area, militaryman, militarywoman, gdp, miejsce)
 
-
+##komentarz
 p2 <- ggplot(dane, aes(x=kraje, y=area)) + 
   geom_bar(stat="identity", fill="cornflowerblue") 
 
@@ -27,7 +27,7 @@ UK <- c(17.3, 12.6, 41, 11.5, 17.3)
 Rumunia <- c(14.6, 11.3, 45.7, 13, 15.1)
 Estonia <- c(15.6, 11.2, 41.5, 13.2, 18.2)
 dane2 <- cbind(Polska, Niemcy, UK, Rumunia, Estonia)
-rownames(dane2) <- c("0-14 lat", "15-24 lat", "25-54 lat", "55-64 lat", "65 lat i wiêcej")
+rownames(dane2) <- c("0-14 lat", "15-24 lat", "25-54 lat", "55-64 lat", "65 lat i wi?cej")
 
 
 dane2 <- melt(dane2)
